@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-05-13T09:23:58Z" name="Surefire suite" finished-at="2019-05-13T09:23:59Z" duration-ms="24">
+    <groups>
+    </groups>
+    <test started-at="2019-05-13T09:23:58Z" name="Surefire test" finished-at="2019-05-13T09:23:59Z" duration-ms="24">
+      <class name="E_LibraryApp.elibrary.BookTest">
+        <test-method signature="testBook()[pri:0, instance:testBook(E_LibraryApp.elibrary.BookTest)]" started-at="2019-05-13T11:23:59Z" name="testBook" finished-at="2019-05-13T11:23:59Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBook -->
+      </class> <!-- E_LibraryApp.elibrary.BookTest -->
+      <class name="E_LibraryApp.elibrary.LibraryTest">
+        <test-method signature="testLibrarySize()[pri:0, instance:testLibrarySize(E_LibraryApp.elibrary.LibraryTest)]" started-at="2019-05-13T11:23:59Z" name="testLibrarySize" finished-at="2019-05-13T11:23:59Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLibrarySize -->
+        <test-method signature="testLibrarySearch()[pri:0, instance:testLibrarySearch(E_LibraryApp.elibrary.LibraryTest)]" started-at="2019-05-13T11:23:59Z" name="testLibrarySearch" finished-at="2019-05-13T11:23:59Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLibrarySearch -->
+      </class> <!-- E_LibraryApp.elibrary.LibraryTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
