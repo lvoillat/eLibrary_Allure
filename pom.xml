@@ -14,6 +14,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
+   	<suiteXmlFile>testng.xml</suiteXmlFile>
+   
   </properties>
 
   <dependencies>
@@ -58,12 +60,18 @@
         <version>3.0.0-M3</version>
         <configuration>
         <testFailureIgnore>true</testFailureIgnore>
+
+		  <suiteXmlFiles>
+		  	<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+		  </suiteXmlFiles>
+
+<!--          <include>LoginTest.java</include> -->
+
 <!-- INCLUDE -->
 <!--
           <include>BookTest.java</include>
           <include>LibraryTest.java</include>
 -->
-          <include>LoginTest.java</include>
           
 <!--          <include>${exclude.tests.pattern}</include> --> 
 <!--  EXCLUDE -->
