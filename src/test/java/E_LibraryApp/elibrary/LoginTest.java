@@ -130,12 +130,14 @@ public class LoginTest extends TestCase {
 	    
 
     	// Chrome
-    	DesiredCapabilities dr = null;
-		dr = DesiredCapabilities.chrome();
-		dr.setBrowserName("chrome");
-		dr.setPlatform(Platform.WIN10);
+//    	DesiredCapabilities dr = null;
+//		dr = DesiredCapabilities.chrome();
+//		dr.setBrowserName("chrome");
+//		dr.setPlatform(Platform.WIN10);
 		System.setProperty("webdriver.chrome.driver", pathSelenium + "chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
+		options.setBrowserName("chrome");
+		options.setPlatform(Platform.WIN10);
     	
  		// Firefox
 //		DesiredCapabilities dr = null;
