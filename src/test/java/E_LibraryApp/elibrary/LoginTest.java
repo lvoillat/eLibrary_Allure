@@ -154,10 +154,10 @@ public class LoginTest extends TestCase {
 		System.out.println("Test - Title is: "+driver.getTitle());
 		
 	    // Perform actions on HTML elements, entering text and submitting the form
-//	    WebElement usernameElement     = driver.findElement(By.name("j_username"));
-//	    WebElement passwordElement     = driver.findElement(By.name("j_password"));
-//	    WebElement StayLoggedInElement = driver.findElement(By.name("rememberme"));
-//	    WebElement formElement         = driver.findElement(By.id("submitButton"));
+	    WebElement usernameElement     = driver.findElement(By.name("j_username"));
+	    WebElement passwordElement     = driver.findElement(By.name("j_password"));
+	    WebElement StayLoggedInElement = driver.findElement(By.name("rememberme"));
+	    WebElement formElement         = driver.findElement(By.id("submitButton"));
 	 
 	    usernameElement.clear();
 	    passwordElement.clear();
