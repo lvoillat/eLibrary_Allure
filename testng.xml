@@ -8,6 +8,7 @@
       <class name="E_LibraryApp.elibrary.BookTest"/>
  -->
       <class name="E_LibraryApp.elibrary.LoginTest"/>
+      <class name="com.E_LibraryApp.elibrary.LoginTest"/>
 <!--       <class name="E_LibraryApp.elibrary.LibraryTest"/>
       <class name="com.polarion.demo.BookTest"/> -->
     </classes>
