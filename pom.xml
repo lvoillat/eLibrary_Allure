@@ -65,18 +65,19 @@
         <version>3.0.0-M3</version>
         <configuration>
 <!--         <testFailureIgnore>true</testFailureIgnore> -->
-<!-- 
+ 
 		  <suiteXmlFiles>
 		  	<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 		  </suiteXmlFiles>
--->
+
 <!--          <include>LoginTest.java</include>   -->
 
 <!-- INCLUDE -->
 
+<!-- 
           <include>BookTest.java</include>
           <include>LibraryTest.java</include>
-
+ -->
           
 <!--          <include>${exclude.tests.pattern}</include> --> 
 <!--  EXCLUDE -->
