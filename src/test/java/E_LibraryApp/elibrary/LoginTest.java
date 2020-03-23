@@ -140,12 +140,12 @@ public class LoginTest extends TestCase {
 		ChromeOptions options = new ChromeOptions();
     	
  		// Firefox
-//		DesiredCapabilities dr = null;
-//		dr = DesiredCapabilities.firefox();
-//		dr.setBrowserName("firefox");
-//		dr.setPlatform(Platform.WIN10);
-//		System.setProperty("webdriver.firefox.driver", pathSelenium + "geckodriver.exe");
-//		FirefoxOptions options = new FirefoxOptions();
+		DesiredCapabilities dr = null;
+		dr = DesiredCapabilities.firefox();
+		dr.setBrowserName("firefox");
+		dr.setPlatform(Platform.WIN10);
+		System.setProperty("webdriver.firefox.driver", pathSelenium + "geckodriver.exe");
+		FirefoxOptions options = new FirefoxOptions();
 		
         options.addArguments("test-type");
 //        options.addArguments("start-maximized");
