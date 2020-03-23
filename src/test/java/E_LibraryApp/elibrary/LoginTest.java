@@ -44,6 +44,88 @@ public class LoginTest extends TestCase {
 	    String successMsg		= "Welcome to Polarion. You logged in successfully";
 
 
+		/** BrowserStack
+		 */
+		String USERNAME = "lionelvoillat1";
+		String AUTOMATE_KEY = "c8qy1xrppgzqqvyTUK6E";
+		String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+    	
+		// BrowserStack
+	    DesiredCapabilities caps = new DesiredCapabilities();
+	    caps.setCapability("browser", "Chrome");
+	    caps.setCapability("browser_version", "78.0");
+//	    caps.setCapability("browser_version", "60.0");
+	    caps.setCapability("os", "Windows");
+	    caps.setCapability("os_version", "10");
+	    caps.setCapability("resolution", "1024x768");
+	    caps.setCapability("name", "Bstack-[Java] Sample Test");
+   caps.setCapability("browserstack.local", "true");
+//   caps.setCapability("browserstack.networkLogs", "true");
+	    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+	    
+	    // TEST - Open Polarion and login 
+        driver.get(polarionURL);	    
+	    // Perform actions on HTML elements, entering text and submitting the form
+	    WebElement usernameElement     = driver.findElement(By.name("j_username"));
+	    WebElement passwordElement     = driver.findElement(By.name("j_password"));
+	    WebElement StayLoggedInElement = driver.findElement(By.name("rememberme"));
+	    WebElement formElement         = driver.findElement(By.id("submitButton"));
+	 
+	    usernameElement.clear();
+	    passwordElement.clear();
+	    usernameElement.sendKeys(polarionUser);
+	    passwordElement.sendKeys(polarionPassword);
+	    StayLoggedInElement.click();
+	    
+	    formElement.submit();        // submit by form element	
+        
+	    try {
+		    // Anticipate web browser response, with an explicit wait
+	    	WebDriverWait wait = new WebDriverWait(driver, 5);
+	    	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("DOM_13")));   // Check for an existing element on the 1st page after login
+	        System.out.println("Message: "+successMsg);
+	    	assertTrue(successMsg,true);
+	    }
+	    catch(Exception e) {
+	    	WebElement errorMessage = driver.findElement(By.id("errorMessage"));
+	    	String failedMsg = errorMessage.getText();
+	    	System.out.println("Message: "+failedMsg);
+	    	driver.quit();
+	    	assertTrue(failedMsg,false);
+	    }
+
+
+	    // Create WI and create Test Case linked to it
+//		TimeUnit.SECONDS.sleep(5);
+//	    driver.findElement(By.id("create_wi_icon_systemrequirement")).click();
+//		WebDriverWait wait2 = new WebDriverWait(driver, 3);
+//		wait2.until(ExpectedConditions.presenceOfElementLocated(By.className("GAMH4D-CIN")));
+//		driver.findElement(By.className("GAMH4D-CIN")).sendKeys("Selenium Test Automation");
+//
+//		WebDriverWait wait3 = new WebDriverWait(driver, 3);
+//		wait3.until(ExpectedConditions.presenceOfElementLocated(By.className("GAMH4D-CIN")));		
+//		driver.findElement(By.id("DOM_280")).click();
+//
+//		String Ctrl_S = Keys.chord(Keys.CONTROL, "S");
+//		driver.findElement(By.className("GAMH4D-CIN")).sendKeys(Ctrl_S);
+//    
+//		TimeUnit.SECONDS.sleep(8);	    
+//		WebDriverWait wait4 = new WebDriverWait(driver, 3);
+//		wait4.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//img[@class=\"gwt-Image\"]")));		
+//		driver.findElement(By.xpath("//img[@class=\"gwt-Image\"]")).click();
+//
+//		WebDriverWait wait5 = new WebDriverWait(driver, 3);
+//		wait5.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[text()=\"Logout\"]")));	
+//		driver.findElement(By.xpath("//div[text()=\"Logout\"]")).click();
+	    	    
+	    
+	    // Conclude test
+	    TimeUnit.SECONDS.sleep(5);   // Wait till Login operation is done
+	    driver.close();
+//	    driver.quit();
+	    
+	    
+
     	// Chrome
     	DesiredCapabilities dr = null;
 		dr = DesiredCapabilities.chrome();
