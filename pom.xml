@@ -70,7 +70,7 @@
 		  	<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 		  </suiteXmlFiles>
 
-          <include>LoginTest.java</include>
+<!--          <include>LoginTest.java</include>   -->
 
 <!-- INCLUDE -->
 <!--
