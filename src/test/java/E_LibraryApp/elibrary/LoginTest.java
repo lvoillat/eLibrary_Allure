@@ -24,11 +24,10 @@ import junit.framework.TestCase;
  * creating a new build using Polarion
  */
 
-public static WebDriver driver;
 
 public class LoginTest extends TestCase {
 
-//	public static WebDriver driver;
+	public static WebDriver driver;
 
 	 /**
 	  @wi.implements SD-1351 Test User Login
