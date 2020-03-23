@@ -148,7 +148,7 @@ public class LoginTest extends TestCase {
 //		FirefoxOptions options = new FirefoxOptions();
 		
         options.addArguments("test-type");
-//        options.addArguments("start-maximized");
+        options.addArguments("start-maximized");
         options.addArguments("--js-flags=--expose-gc");  
 		
         driver = new RemoteWebDriver(new URL(rmWebDrvURL), options);
