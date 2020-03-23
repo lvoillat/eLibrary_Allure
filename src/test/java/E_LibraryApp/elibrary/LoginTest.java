@@ -133,8 +133,7 @@ public class LoginTest extends TestCase {
 
     	// Chrome
     	DesiredCapabilities dr = null;
-		//dr = DesiredCapabilities.chrome();
-    	dr = new ChromeOptions();
+		dr = DesiredCapabilities.chrome();
 		dr.setBrowserName("chrome");
 		dr.setPlatform(Platform.WIN10);
 		System.setProperty("webdriver.chrome.driver", pathSelenium + "chromedriver.exe");
