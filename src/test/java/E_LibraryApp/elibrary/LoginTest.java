@@ -19,8 +19,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import junit.framework.TestCase;
 
-import org.testng.annotations.Test;
-
 /**
  * LoginTest always fails, it is executed if you select "All Tests" build definition when
  * creating a new build using Polarion
