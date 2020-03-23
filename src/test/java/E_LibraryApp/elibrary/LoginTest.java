@@ -36,7 +36,7 @@ public class LoginTest extends TestCase {
 	  @wi.implements SD-1351 Test User Login
 	  */
 
-	@Test
+
     public void testLogin() throws MalformedURLException, InterruptedException {
 
 	    String pathSelenium		= "C:\\LCS\\Selenium";   // double backslash between every folder
@@ -59,13 +59,12 @@ public class LoginTest extends TestCase {
 	    DesiredCapabilities caps = new DesiredCapabilities();
 	    caps.setCapability("browser", "Chrome");
 	    caps.setCapability("browser_version", "78.0");
-//	    caps.setCapability("browser_version", "60.0");
+	    //caps.setCapability("browser_version", "60.0");
 	    caps.setCapability("os", "Windows");
 	    caps.setCapability("os_version", "10");
 	    caps.setCapability("resolution", "1024x768");
 	    caps.setCapability("name", "Bstack-[Java] Sample Test");
-   caps.setCapability("browserstack.local", "true");
-//   caps.setCapability("browserstack.networkLogs", "true");
+	    caps.setCapability("browserstack.local", "true");
 	    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
 	    
 	    // TEST - Open Polarion and login 
