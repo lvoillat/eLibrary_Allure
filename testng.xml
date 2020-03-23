@@ -10,6 +10,7 @@
        <class name="E_LibraryApp.elibrary.LibraryTest"/> 
 
        <class name="E_LibraryApp.elibrary.LoginTest"/>
+       <class name="E_LibraryApp.elibrary.LoginLionel"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
