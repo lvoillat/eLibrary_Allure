@@ -25,27 +25,28 @@ import junit.framework.TestCase;
  */
 
 
+
+public class LoginMyTest extends TestCase {
+
+	public void testLionel() {
+        String title = "The C Programming Language"; 
+        String author = "Kernighan & Ritchie";
+        String publisher = "Jackson";
+        int year = 1996;
+        Book book = new Book(title, author, publisher, year);
+        
+        assertEquals("Wrong book author", author, book.getAuthor());
+        assertEquals("Unexpected book title", title, book.getTitle());
+        assertEquals("Unexpected book publisher", publisher, book.getPublisher());
+        assertEquals("Unexpected book publication year", year, book.getPublicationYear());
+    }
+
+}
+
+
+
 public class LoginTest extends TestCase {
 
-	
-	public class LoginMyTest extends TestCase {
-
-		public void testLionel() {
-	        String title = "The C Programming Language"; 
-	        String author = "Kernighan & Ritchie";
-	        String publisher = "Jackson";
-	        int year = 1996;
-	        Book book = new Book(title, author, publisher, year);
-	        
-	        assertEquals("Wrong book author", author, book.getAuthor());
-	        assertEquals("Unexpected book title", title, book.getTitle());
-	        assertEquals("Unexpected book publisher", publisher, book.getPublisher());
-	        assertEquals("Unexpected book publication year", year, book.getPublicationYear());
-	    }
-
-	}
-	
-	
 	public static WebDriver driver;
 
 	 /**
