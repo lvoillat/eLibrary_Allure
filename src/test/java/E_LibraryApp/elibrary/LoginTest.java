@@ -51,52 +51,52 @@ public class LoginTest extends TestCase {
 
 		/** BrowserStack
 		 */
-		String USERNAME = "lionelvoillat1";
-		String AUTOMATE_KEY = "c8qy1xrppgzqqvyTUK6E";
-		String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
-    	
-		// BrowserStack
-	    DesiredCapabilities caps = new DesiredCapabilities();
-	    caps.setCapability("browser", "Chrome");
-	    caps.setCapability("browser_version", "78.0");
-	    //caps.setCapability("browser_version", "60.0");
-	    caps.setCapability("os", "Windows");
-	    caps.setCapability("os_version", "10");
-	    caps.setCapability("resolution", "1024x768");
-	    caps.setCapability("name", "Bstack-[Java] Sample Test");
-	    caps.setCapability("browserstack.local", "true");
-	    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
-	    
-	    // TEST - Open Polarion and login 
-        driver.get(polarionURL);	    
-	    // Perform actions on HTML elements, entering text and submitting the form
-	    WebElement usernameElement     = driver.findElement(By.name("j_username"));
-	    WebElement passwordElement     = driver.findElement(By.name("j_password"));
-	    WebElement StayLoggedInElement = driver.findElement(By.name("rememberme"));
-	    WebElement formElement         = driver.findElement(By.id("submitButton"));
-	 
-	    usernameElement.clear();
-	    passwordElement.clear();
-	    usernameElement.sendKeys(polarionUser);
-	    passwordElement.sendKeys(polarionPassword);
-	    StayLoggedInElement.click();
-	    
-	    formElement.submit();        // submit by form element	
-        
-	    try {
-		    // Anticipate web browser response, with an explicit wait
-	    	WebDriverWait wait = new WebDriverWait(driver, 5);
-	    	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("DOM_13")));   // Check for an existing element on the 1st page after login
-	        System.out.println("Message: "+successMsg);
-	    	assertTrue(successMsg,true);
-	    }
-	    catch(Exception e) {
-	    	WebElement errorMessage = driver.findElement(By.id("errorMessage"));
-	    	String failedMsg = errorMessage.getText();
-	    	System.out.println("Message: "+failedMsg);
-	    	driver.quit();
-	    	assertTrue(failedMsg,false);
-	    }
+//		String USERNAME = "lionelvoillat1";
+//		String AUTOMATE_KEY = "c8qy1xrppgzqqvyTUK6E";
+//		String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+//    	
+//		// BrowserStack
+//	    DesiredCapabilities caps = new DesiredCapabilities();
+//	    caps.setCapability("browser", "Chrome");
+//	    caps.setCapability("browser_version", "78.0");
+//	    //caps.setCapability("browser_version", "60.0");
+//	    caps.setCapability("os", "Windows");
+//	    caps.setCapability("os_version", "10");
+//	    caps.setCapability("resolution", "1024x768");
+//	    caps.setCapability("name", "Bstack-[Java] Sample Test");
+//	    caps.setCapability("browserstack.local", "true");
+//	    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+//	    
+//	    // TEST - Open Polarion and login 
+//        driver.get(polarionURL);	    
+//	    // Perform actions on HTML elements, entering text and submitting the form
+//	    WebElement usernameElement     = driver.findElement(By.name("j_username"));
+//	    WebElement passwordElement     = driver.findElement(By.name("j_password"));
+//	    WebElement StayLoggedInElement = driver.findElement(By.name("rememberme"));
+//	    WebElement formElement         = driver.findElement(By.id("submitButton"));
+//	 
+//	    usernameElement.clear();
+//	    passwordElement.clear();
+//	    usernameElement.sendKeys(polarionUser);
+//	    passwordElement.sendKeys(polarionPassword);
+//	    StayLoggedInElement.click();
+//	    
+//	    formElement.submit();        // submit by form element	
+//        
+//	    try {
+//		    // Anticipate web browser response, with an explicit wait
+//	    	WebDriverWait wait = new WebDriverWait(driver, 5);
+//	    	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("DOM_13")));   // Check for an existing element on the 1st page after login
+//	        System.out.println("Message: "+successMsg);
+//	    	assertTrue(successMsg,true);
+//	    }
+//	    catch(Exception e) {
+//	    	WebElement errorMessage = driver.findElement(By.id("errorMessage"));
+//	    	String failedMsg = errorMessage.getText();
+//	    	System.out.println("Message: "+failedMsg);
+//	    	driver.quit();
+//	    	assertTrue(failedMsg,false);
+//	    }
 
 
 	    // Create WI and create Test Case linked to it
@@ -123,10 +123,9 @@ public class LoginTest extends TestCase {
 //		driver.findElement(By.xpath("//div[text()=\"Logout\"]")).click();
 	    	    
 	    
-	    // Conclude test
-	    TimeUnit.SECONDS.sleep(5);   // Wait till Login operation is done
-	    driver.close();
-//	    driver.quit();
+//	    // Conclude test
+//	    TimeUnit.SECONDS.sleep(5);   // Wait till Login operation is done
+//	    driver.close();
 	    
 	    
 
