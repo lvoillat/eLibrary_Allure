@@ -149,9 +149,7 @@ public class LoginTest extends TestCase {
 		
         options.addArguments("test-type");
 //        options.addArguments("start-maximized");
-        options.manage().window().setPosition(new Point(0, 0));
-        options.manage().window().setSize(new org.openqa.selenium.Dimension(1280, 800));        
-        options.addArguments("--js-flags=--expose-gc");  
+//        options.addArguments("--js-flags=--expose-gc");  
 		
         driver = new RemoteWebDriver(new URL(rmWebDrvURL), options);
         driver.get(polarionURL);
