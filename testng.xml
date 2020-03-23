@@ -8,7 +8,7 @@
  -->     
       <class name="E_LibraryApp.elibrary.BookTest"/>
  
-       <class name="E_LibraryApp.elibrary.LoginTest"/>
+<!--        <class name="E_LibraryApp.elibrary.LoginTest"/> -->
        <class name="E_LibraryApp.elibrary.LibraryTest"/>
     </classes>
   </test> <!-- Test -->
