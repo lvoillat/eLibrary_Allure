@@ -24,32 +24,38 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
     <dependency>
 	<groupId>org.seleniumhq.selenium</groupId>
 		<artifactId>selenium-java</artifactId>
 		<version>3.141.59</version>
 	</dependency>
+	
 	<dependency>
 		<groupId>org.testng</groupId>
 		<artifactId>testng</artifactId>
 		<version>6.8</version>
 		<scope>test</scope>
 	</dependency>
+	
 	<dependency> 
       <groupId>log4j</groupId> 
       <artifactId>log4j</artifactId> 
       <version>1.2.8</version> 
     </dependency> 
+    
     <dependency> 
       <groupId>commons-configuration</groupId> 
       <artifactId>commons-configuration</artifactId> 
       <version>1.2</version> 
     </dependency> 
+    
     <dependency> 
       <groupId>commons-primitives</groupId> 
       <artifactId>commons-primitives</artifactId> 
       <version>1.0</version> 
     </dependency>
+    
   </dependencies>
   <build> 
     <plugins>
@@ -64,7 +70,7 @@
 		  	<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 		  </suiteXmlFiles>
 
-<!--          <include>LoginTest.java</include> -->
+          <include>LoginTest.java</include>
 
 <!-- INCLUDE -->
 <!--
