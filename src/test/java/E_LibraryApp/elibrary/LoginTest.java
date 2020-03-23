@@ -19,6 +19,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import junit.framework.TestCase;
 
+import org.testng.annotations.*;
+
+
 /**
  * LoginTest always fails, it is executed if you select "All Tests" build definition when
  * creating a new build using Polarion
@@ -32,7 +35,8 @@ public class LoginTest extends TestCase {
 	 /**
 	  @wi.implements SD-1351 Test User Login
 	  */
-	
+
+	@Test
     public void testLogin() throws MalformedURLException, InterruptedException {
 
 	    String pathSelenium		= "C:\\LCS\\Selenium";   // double backslash between every folder
