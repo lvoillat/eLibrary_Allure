@@ -27,7 +27,7 @@ import org.testng.annotations.Test;
  */
 
 public class LoginTest extends TestCase {
-	@Test
+
 	public static WebDriver driver;
 
 	 /**
@@ -35,7 +35,7 @@ public class LoginTest extends TestCase {
 	  */
 	
     public void testLogin() throws MalformedURLException, InterruptedException {
-System.out.println("This is a selenium demo");
+
 	    String pathSelenium		= "C:\\LCS\\Selenium";   // double backslash between every folder
 	    String rmWebDrvURL		= "http://localhost:4444/wd/hub";		// Selenium Remote Web Driver URL
 
