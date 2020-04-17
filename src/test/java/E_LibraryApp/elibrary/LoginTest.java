@@ -195,7 +195,6 @@ public class LoginTest extends TestCase {
 		wait5.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[text()=\"Logout\"]")));	
 		driver.findElement(By.xpath("//div[text()=\"Logout\"]")).click();
 	    	    
-	    	    
 	    
 	    // Conclude test
 	    TimeUnit.SECONDS.sleep(5);   // Wait till Login operation is done
