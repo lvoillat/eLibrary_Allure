@@ -186,14 +186,14 @@ public class LoginTest extends TestCase {
 	    
 	    
 	    // Polarion Logout
-//		TimeUnit.SECONDS.sleep(8);	    
-//		WebDriverWait wait4 = new WebDriverWait(driver, 3);
-//		wait4.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//img[@class=\"gwt-Image\"]")));		
-//		driver.findElement(By.xpath("//img[@class=\"gwt-Image\"]")).click();
-//
-//		WebDriverWait wait5 = new WebDriverWait(driver, 3);
-//		wait5.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[text()=\"Logout\"]")));	
-//		driver.findElement(By.xpath("//div[text()=\"Logout\"]")).click();
+		TimeUnit.SECONDS.sleep(8);	    
+		WebDriverWait wait4 = new WebDriverWait(driver, 3);
+		wait4.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//img[@class=\"gwt-Image\"]")));		
+		driver.findElement(By.xpath("//img[@class=\"gwt-Image\"]")).click();
+
+		WebDriverWait wait5 = new WebDriverWait(driver, 3);
+		wait5.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[text()=\"Logout\"]")));	
+		driver.findElement(By.xpath("//div[text()=\"Logout\"]")).click();
 	    	    
 	    
 	    // Conclude test
