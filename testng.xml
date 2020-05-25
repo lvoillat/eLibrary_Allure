@@ -5,7 +5,7 @@
     <classes>
        <class name="E_LibraryApp.elibrary.BookTest"/>
        <class name="E_LibraryApp.elibrary.LibraryTest"/>
-      <class name="E_LibraryApp.elibrary.LoginTest"/>
+       <class name="E_LibraryApp.elibrary.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
