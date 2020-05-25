@@ -83,6 +83,12 @@
 		  <suiteXmlFiles>
 		  	<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 		  </suiteXmlFiles>
+                 <systemProperties>
+                    <property>
+                        <name>allure.results.directory</name>
+                        <value>${allure.results.directory}</value>
+                    </property>
+                </systemProperties>		  
         </configuration>
       </plugin>     
     </plugins>
