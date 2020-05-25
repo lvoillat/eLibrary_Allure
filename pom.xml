@@ -86,7 +86,8 @@
                  <systemProperties>
                     <property>
                         <name>allure.results.directory</name>
-                        <value>${allure.results.directory}</value>
+                        <!--  <value>${allure.results.directory}</value> -->
+                        <value>C:\LCS\Jenkins\workspace\eLibrary_Allure\target\allure-results</value>
                     </property>
                 </systemProperties>		  
         </configuration>
@@ -103,7 +104,7 @@
                <configuration>
                    <outputDirectory>${basedir}/target/allure-reports/</outputDirectory>
                    <allureResultsDirectory>${basedir}/target/allure-results</allureResultsDirectory>
-               </configuration>
+               </configuration>             
 		</plugin>
       </plugins>
   </reporting>
