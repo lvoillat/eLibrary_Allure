@@ -47,6 +47,7 @@ public class LoginTest extends TestCase {
 
 	    String successMsg		= "Welcome to Polarion. You logged in successfully";
 
+	    
 
 		/** BrowserStack
 		 */
