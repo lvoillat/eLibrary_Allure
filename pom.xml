@@ -89,6 +89,12 @@
 			  <suiteXmlFiles>
 			  	<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 			  </suiteXmlFiles>
+			  
+                <configuration>
+                    <outputDirectory>${basedir}/target/allure-reports/</outputDirectory>
+                    <allureResultsDirectory>${basedir}/target/allure-results</allureResultsDirectory>
+                </configuration>
+			  
         	</configuration>
 		</plugin>
  
