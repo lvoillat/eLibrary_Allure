@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" verbose="0" name="Surefire suite" junit="true">
-  <test name="Surefire test">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
-<!--
-      <class name="com.polarion.demo.BookTest"/>
-      <class name="com.polarion.demo.LibraryTest"/>
-      <class name="com.polarion.demo.LoginTest"/>
--->
-      <class name="E_LibraryApp.elibrary.BookTest"/>
-      <class name="E_LibraryApp.elibrary.LibraryTest"/>
-       <class name="E_LibraryApp.elibrary.LoginTest"/>
+       <class name="E_LibraryApp.elibrary.BookTest"/>
+      <class name="E_LibraryApp.elibrary.LoginTest"/>
+       <class name="E_LibraryApp.elibrary.LibraryTest"/>
     </classes>
-  </test> <!-- Surefire test -->
-</suite> <!-- Surefire suite -->
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
