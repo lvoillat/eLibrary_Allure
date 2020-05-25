@@ -27,7 +27,6 @@ import org.testng.annotations.*;
  * creating a new build using Polarion
  */
 
-
 public class LoginTest extends TestCase {
 
 	public static WebDriver driver;
