@@ -1,9 +1,11 @@
 package E_LibraryApp.elibrary;
 
 import junit.framework.TestCase;
+import org.testng.annotations.*;
 
 public class LibraryTest extends TestCase {
     
+	@Test
     public void testLibrarySize() {
         Library library = new Library();
         assertEquals("Unexpected library size", 0, library.getSize());
@@ -17,6 +19,7 @@ public class LibraryTest extends TestCase {
         assertEquals("Unexpected library size", 2, library.getSize());
     }
     
+	@Test
     public void testLibrarySearch() {
         Library library = new Library();
         

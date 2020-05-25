@@ -1,11 +1,14 @@
 package E_LibraryApp.elibrary;
 
 import junit.framework.TestCase;
+import org.testng.annotations.*;
 
 public class BookTest extends TestCase {
 	/**
 	 * @wi.implements SD-1364 Implementing testBook method
 	 */
+	
+	@Test
     public void testBook() {
         String title = "The C Programming Language"; 
         String author = "Kernighan & Ritchie";
